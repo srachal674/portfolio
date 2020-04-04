@@ -1,0 +1,278 @@
+
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="prism-atom-dark.css"
+      type="text/css"
+      media="screen"
+    />
+
+    <script type="text/javascript" src="prism.js"></script>
+    <script type="text/javascript" src="prism.ruby.js"></script>
+
+     <title>Shannon Rachal</title>
+    <meta name="description" content="Shannon Rachal is a teacher and web designer. Recently she compelte the University of Arizona Onlne Coding Bootcamp where she learned Ruby, Rails, JavaScript, and building web applications. She currently teaches Game Design 1 at Destinatiions Career Academy at Insight Academy of Arizona. Shannon hopes to one day transition from education to a career in web design.">
+
+      </head>
+  <body>
+    <a name="top" class="anchor"> </a>
+
+    <div class="about-container">
+      <ul>
+          <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#code-samples" class="nav-link">CODE SAMPLES</a></li>
+        <li><a href="#web-apps" class="nav-link">WEB APPS</a></li>
+        <li><a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a></li>
+          <li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+        </ul>
+
+      <div class="about">
+        <img src="me.jpg" class="me" />
+      
+
+        <h1>Shannon Rachal</h1>
+
+      
+        <h2>WEB DESIGNER</h2>
+      
+        <hr class="grey"/>
+        <p class="bio"> 
+          Shannon Rachal is a teacher and web designer. Recently she compelte the University of Arizona Onlne Coding Bootcamp where she learned Ruby, Rails, JavaScript, and building web applications. She currently teaches Game Design 1 at Destinatiions Career Academy at Insight Academy of Arizona. Shannon hopes to one day transition from education to a career in web design.
+        </p>
+      </div>
+    </div>
+
+    <h3 id="code-samples">Code Snippets</h3>
+    <hr class="blue"/>
+
+  <div class= "box">
+      <h4>Temperature Conversion</h4>
+      <p>
+        This Ruby program will prompt the user for a temperature in degrees Celsius and let the user know what the corresponding temperature is in Fahrenheit.
+     </p>
+  </div>
+
+  <div class="box">
+<pre><code class="language-ruby">
+def c_to_f 
+    puts &quot;Enter degrees Celsius&quot; 
+    degrees = gets 
+    fh = (degrees.to_i * 9/5) + 32 
+    puts &quot;#{degrees} Celsius is #{fh} Fahrenheit.&quot;
+end
+
+puts c_to_f 
+</code></pre>
+
+  </div>
+
+  <br class= "clear" />
+
+  <div class="box">
+<pre><code class="language-ruby">
+puts &quot;Enter a whole number&quot;
+  number = gets.chomp
+    answer = number.to_i
+    age = number % 10
+    
+def answer (age)
+    
+    if age == 1
+        return &quot;#{age} st&quot;
+        
+    elsif age == 2
+        return &quot;#{age} nd&quot;
+        
+    elsif age == 3
+        return &quot;#{age} rd&quot;
+        
+    elsif age == 4 || 5 || 6 || 7 || 8 || 9 || 10
+        return &quot;#{age} th&quot;
+   end
+end
+
+puts answer (age)
+</code></pre>
+
+  </div>
+
+  <div class="box">
+     <h4>Ordinal Challenge</h4>
+    <p>
+      This Ruby program will convert a plain number
+      to the ordinal of the number. So for example,
+      if the user enters 2, it will display 2nd, if
+      the user enters 3, it will display 3rd, etc.
+    </p>
+  </div>
+
+  <br class="clear" />
+
+  <div class="box">
+      <h4>Foobar</h4>
+    <p>
+      This Ruby program is an adaptation of a classic technical
+      interview problem which displays sequences
+      of the Foobar pattern.
+    </p>
+  </div>
+
+  <div class="box">
+<pre><code class="language-ruby">
+puts &quot;How many items do you want to see?&quot;
+items = gets.chomp.to_i
+    
+list = []
+(1..items).each do |x|
+    
+    if x % 3 == 0 &amp;&amp; x % 5 == 0
+        list &lt;&lt; &quot;Foobar&quot;
+    
+    elsif x % 5 == 0 
+        list &lt;&lt; &quot;Bar&quot;
+        
+    elsif x % 3 ==0
+        list &lt;&lt; &quot;Foo&quot;
+        
+    else 
+        list &lt;&lt; x
+    end
+    
+end
+
+puts list
+</code></pre>
+
+  </div>
+
+  <br class="clear" />
+
+  <h3 id="web-apps">Web Apps</h3>
+  <hr class="blue" />
+
+    <div class="box">
+      <h4>Quote Generator</h4>
+      <a href="https://splurty-shannon-rachal.herokuapp.com/" target="_blank">
+        <img src="splurty.png" class="full-width" />
+      </a>
+         <p>
+            A database-powered quote generator with a mobile-first
+            design, using the Ruby on Rails framework, HTML, and CSS.
+            Uses Git and GitHub for version control, and launched
+            on Heroku.
+          </p>
+        </div>
+
+    <div class="box">
+        <h4>Yelp Clone</h4>
+        <a href="https://nomster-sr.herokuapp.com/" target="_blank">
+          <img src="nomster.png" class="full-width" />
+        </a>  
+          <p>
+            A Yelp clone that integrates with the Google Maps API
+            and includes features like user comments, star ratings,
+            image uploading, and user authentication.
+          </p>
+      </div>
+
+      <br class="clear" />
+
+      <div class="box">
+        <h4>Two-Sided Market Place</h4>
+        <a href="https://flixter-shannon-rachal.herokuapp.com/" target="_blank">
+          <img src="flixter.png" class="full-width" />
+        </a>
+          <p>
+            A two-sided, video-streaming marketplace platform that
+            features credit card payment capabilities, user role
+            management, complex user interfaces, and advanced
+            database relationships.
+          </p>
+      </div>
+
+      <div class="box">
+        <h4>Test Driven Development</h4>
+        <a href="https://grammable-shannon-rachal.herokuapp.com/" target="_blank">
+          <img src="grammable.png" class="full-width" />
+        </a>
+          <p>
+            An Instagram clone that was built using industry-standard, test-driven
+            development following numerous red/green/refactor cycles.
+          </p>
+      </div>
+
+      <br class="clear" />
+
+      <div class="box">
+        <h4>Single Page Todo Application</h4>
+        <a href="https://todo-shannon-rachal.herokuapp.com/" target="_blank">
+          <img src="todoster.png" class="full-width" />
+        </a>
+          <p>
+            This single-page to-do application features a
+            fluid user interface that– by using JavaScript–
+            allows users to rapidly add dynamic content.
+          </p>
+      </div>
+
+      <div class="box">
+        <h4>Final Project</h4>
+        <img src="#" class="full-width" />
+        <p>
+          Worked on an Agile software development team building
+          a chess application. Under the guidance of a senior software engineer,
+          we had weekly Agile team meetings for code reviews, sprint planning,
+          and feature assignments.
+        </p>
+      </div>
+
+      <br class="clear" />
+
+      <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+        <hr class="blue"/>
+
+        <p class="skills-and-tools">
+          Shannon has developed proficiency and expertise
+          in the following programming languages and
+          comfort with the following tools.
+        </p>
+
+      <div class="icons">
+      <img src="github.png" class="icon" />
+        <img src="rubocop.png" class="icon" />
+        <img src="trello.png" class="icon" />
+        <img src="slack.png" class="icon" />
+        <img src="codeship.png" class="icon" />
+
+        <br class="clear" />
+        <img src="skills.png" class="icon"/>
+
+      </div>
+      
+    </div>
+    
+    <div class="contact-me" id="hire-me">
+       <h3 class="contact-headline">Contact</h3>
+    
+      <hr class="blue" />
+      <p class="contact-info">
+          Currently entertaining new opportunities.
+          Please get in touch via email:
+        </p>
+
+        <p>
+            <a href="mailto:srachal674@gmail.com" class="contact-link">
+              srachal674@gmail.com
+            </a>
+        </p>
+        
+      </div>
+    
+  </body>
+
+</html>

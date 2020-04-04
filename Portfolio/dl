@@ -1,0 +1,17 @@
+[33mcommit 06814ab008d647c68637e89a223d4f6beb347500[m
+Author: Shannon Rachal <srachal674@gmail.com>
+Date:   Sat Nov 2 22:10:45 2019 +0000
+
+    Added google buttons
+
+[33mcommit 39d02c33787d3a4f8b039d98677b9b5f9208c629[m
+Author: Shannon Rachal <srachal674@gmail.com>
+Date:   Sat Nov 2 22:00:00 2019 +0000
+
+    Added content to the index and first blog post
+
+[33mcommit a4c7ece7b8d6581f8096a5530ba65e0fd6638cf5[m
+Author: Shannon Rachal <srachal674@gmail.com>
+Date:   Sat Nov 2 21:40:15 2019 +0000
+
+    Create initial HTML skeleton and .gitignore
