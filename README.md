@@ -1,2 +1,6 @@
-# srachal-portfolio
-This is my portfolio showcasing projects I completed at the University of Arizona Online Coding Bootcamp
+# Git Blog App
+
+I built this blog app as a way to learn Git and & GitHub. Going forward I'll keep it up to date with my current information and occasionally write blog posts.
+
+Check back soon!
+<img src="screenshot.png" alt="Blog Screenshot">
