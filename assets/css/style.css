@@ -93,6 +93,7 @@ li {
 		2px -2px 0 #000,
 		-2px 2px 0 #000,
 		2px 2px 0 #000;
+	
 }
 
 .me {
@@ -142,7 +143,7 @@ li {
 }
 
 .full-width {
-	width: 100%
+	width: 100%;
 	max-width: none;
 }
 
