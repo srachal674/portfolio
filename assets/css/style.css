@@ -7,6 +7,17 @@
  		height: 600px;
  	}	
 
+/* Overrides for full-width hero bio */
+.about.full-width {
+  width: 100%;
+  max-width: none;     
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 2rem;  /
+  padding-right: 2rem;
+  text-align: left;    
+}
+
 body{
  	font-family: 'Roboto', sans-serif;
  	margin: 0;
