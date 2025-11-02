@@ -143,6 +143,7 @@ li {
 
 .full-width {
 	width: 100%
+	max-width: none;
 }
 
 .skills-and-tools {
