@@ -93,7 +93,11 @@ li {
 		2px -2px 0 #000,
 		-2px 2px 0 #000,
 		2px 2px 0 #000;
-	
+
+	max-width: 800px;        /* limit width to ~800px */
+	margin-left: auto;       /* center the block */
+	margin-right: auto;      /* center the block */
+	text-align: justify;     /* or use 'left' for left-aligned text */
 }
 
 .me {
