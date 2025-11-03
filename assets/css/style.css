@@ -152,8 +152,9 @@ li {
 }
 
 .skills-and-tools {
-  max-width: 400px;
+  max-width: 800px;
   margin: 40px auto;
+  text-align: justify;
 }
 
 .icons {
