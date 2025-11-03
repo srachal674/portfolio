@@ -231,3 +231,7 @@ li {
   padding: 0 2rem;
   text-align: center;   /* restore centering */
 }
+
+.section {
+	font-size: x-large;
+}

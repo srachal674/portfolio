@@ -42,197 +42,148 @@
       
         <hr class="grey"/>
         <p class="bio"> 
-        Shannon Rachal — a dedicated educator turned web designer. With a background in teaching and a recent coding bootcamp at the University of Arizona under my belt, I specialise in creating clean, functional web projects using HTML5, CSS, JavaScript, and Python. Visit my portfolio to explore my code samples and web applications.
+        Shannon Rachal — a dedicated educator turned web designer. With a background in teaching and a recent coding bootcamp at the University of Arizona under my belt, I specialise in creating clean, functional web projects using HTML5, CSS, JavaScript, and Python.
         </p>
       </div>
     </div>
 
-    <h3 id="code-samples">Code Snippets</h3>
-    <p>A selection of small, practical programs I’ve built to sharpen my coding skills. These include:</p>
-    <hr class="blue"/>
+  <details class="section">
+        <h3 id="code-samples">Code Snippets - This part showcases small Ruby programs that demonstrate basic programming concepts: </h3>
+  <hr class="blue"/>
+      <div class= "box">
+          <h4>Temperature Conversion – A script that takes a temperature in Celsius, converts it to Fahrenheit and prints the result, illustrating user input and arithmetic operations.</h4>          
+      </div>
 
-  <div class= "box">
-      <h4>Temperature Conversion</h4>
-      <p>
-        This Ruby program will prompt the user for a temperature in degrees Celsius and let the user know what the corresponding temperature is in Fahrenheit.
-     </p>
-  </div>
+      <div class="box">
+        <pre><code class="language-ruby">
+        def c_to_f 
+            puts &quot;Enter degrees Celsius&quot; 
+            degrees = gets 
+            fh = (degrees.to_i * 9/5) + 32 
+            puts &quot;#{degrees} Celsius is #{fh} Fahrenheit.&quot;
+        end
 
-  <div class="box">
-<pre><code class="language-ruby">
-def c_to_f 
-    puts &quot;Enter degrees Celsius&quot; 
-    degrees = gets 
-    fh = (degrees.to_i * 9/5) + 32 
-    puts &quot;#{degrees} Celsius is #{fh} Fahrenheit.&quot;
-end
+        puts c_to_f 
+        </code></pre>
 
-puts c_to_f 
-</code></pre>
+      </div>
 
-  </div>
+      <br class= "clear" />
 
-  <br class= "clear" />
+      <div class="box">
+        <pre><code class="language-ruby">
+        puts &quot;Enter a whole number&quot;
+          number = gets.chomp
+            answer = number.to_i
+            age = number % 10
+            
+        def answer (age)
+          if age == 1
+            return &quot;#{age} st&quot;
+          elsif age == 2
+            return &quot;#{age} nd&quot;
+          elsif age == 3
+            return &quot;#{age} rd&quot;
+          elsif age == 4 || 5 || 6 || 7 || 8 || 9 || 10
+            return &quot;#{age} th&quot;
+          end
+        end
 
-  <div class="box">
-<pre><code class="language-ruby">
-puts &quot;Enter a whole number&quot;
-  number = gets.chomp
-    answer = number.to_i
-    age = number % 10
-    
-def answer (age)
-  if age == 1
-    return &quot;#{age} st&quot;
-  elsif age == 2
-    return &quot;#{age} nd&quot;
-  elsif age == 3
-    return &quot;#{age} rd&quot;
-  elsif age == 4 || 5 || 6 || 7 || 8 || 9 || 10
-    return &quot;#{age} th&quot;
-  end
-end
+        puts answer (age)
+        </code></pre>
 
-puts answer (age)
-</code></pre>
+      </div>
 
-  </div>
+      <div class="box">
+        <h4>Ordinal Challenge – Converts plain numbers into their ordinal form (1 → 1st, 2 → 2nd, etc.), demonstrating conditional logic.</h4>
+      </div>
 
-  <div class="box">
-     <h4>Ordinal Challenge</h4>
-    <p>
-      This Ruby program will convert a plain number
-      to the ordinal of the number. So for example,
-      if the user enters 2, it will display 2nd, if
-      the user enters 3, it will display 3rd, etc.
-    </p>
-  </div>
+      <br class="clear" />
 
-  <br class="clear" />
-
-  <div class="box">
-      <h4>Foobar</h4>
-    <p>
-      This Ruby program is an adaptation of a classic technical
-      interview problem which displays sequences
-      of the Foobar pattern.
-    </p>
-  </div>
-
-  <div class="box">
-<pre><code class="language-ruby">
-puts &quot;How many items do you want to see?&quot;
-items = gets.chomp.to_i
-    
-list = []
-(1..items).each do |x|
-    
-    if x % 3 == 0 &amp;&amp; x % 5 == 0
-        list &lt;&lt; &quot;Foobar&quot;
-    
-    elsif x % 5 == 0 
-        list &lt;&lt; &quot;Bar&quot;
-        
-    elsif x % 3 ==0
-        list &lt;&lt; &quot;Foo&quot;
-        
-    else 
-        list &lt;&lt; x
-    end
-    
-end
-
-puts list
-</code></pre>
-
-  </div>
-
-  <br class="clear" />
-
-  <h3 id="web-apps">Web Apps</h3>
-  <hr class="blue" />
+      <div class="box">
+        <h4>Foobar – An adaptation of the classic FizzBuzz problem: given a number of items, it prints “Foo,” “Bar” or “Foobar” depending on divisibility, highlighting looping and conditionals.</h4>
+      </div>
 
     <div class="box">
-      <h4>Quote Generator</h4>
-      <img src="assets/images/splurty.png" class="full-width" />
-      </a>
-         <p>
-            A database-powered quote generator with a mobile-first
-            design, using the Ruby on Rails framework, HTML, and CSS.
-            Uses Git and GitHub for version control, and launched
-            on Heroku.
-          </p>
-        </div>
+      <pre><code class="language-ruby">
+        puts &quot;How many items do you want to see?&quot;
+        items = gets.chomp.to_i
+          
+        list = []
+        (1..items).each do |x|
+          if x % 3 == 0 &amp;&amp; x % 5 == 0
+            list &lt;&lt; &quot;Foobar&quot;
+          elsif x % 5 == 0 
+            list &lt;&lt; &quot;Bar&quot;
+          elsif x % 3 ==0
+            list &lt;&lt; &quot;Foo&quot;
+          else 
+            list &lt;&lt; x
+          end
+        end
+      puts list
+      </code></pre>
+    </div>
+  </details>
+    
+  <br class="clear" />
 
-    <div class="box">
-        <h4>Yelp Clone</h4>
+  <details class="section">  
+    <h3 id="web-apps">Web Apps Section – This highlights several full‑stack or front‑end applications built during the bootcamp:</h3>
+    <hr class="blue" />
+
+      <div class="box">
+        <h4>Quote Generator – A Rails‑based, database‑powered quote generator with a mobile‑first design; version‑controlled with Git/GitHub and deployed on Heroku.</h4>
+        <img src="assets/images/splurty.png" class="full-width" />
+        </a>
+      </div>
+
+      <div class="box">
+        <h4>Yelp Clone – A Yelp‑style app integrating Google Maps and supporting user comments, star ratings, image uploads and authentication.</h4>
         <img src="assets/images/nomster.png" class="full-width" />
         </a>  
-          <p>
-            A Yelp clone that integrates with the Google Maps API
-            and includes features like user comments, star ratings,
-            image uploading, and user authentication.
-          </p>
       </div>
 
       <br class="clear" />
 
       <div class="box">
-        <h4>Two-Sided Market Place</h4>
+        <h4>Two‑Sided Market Place – A video‑streaming marketplace that handles credit‑card payments, user roles, complex interfaces and advanced database relations.</h4>
         <img src="assets/images/flixter.png" class="full-width" />
         </a>
-          <p>
-            A two-sided, video-streaming marketplace platform that
-            features credit card payment capabilities, user role
-            management, complex user interfaces, and advanced
-            database relationships.
-          </p>
       </div>
 
       <div class="box">
-        <h4>Test Driven Development</h4>
+        <h4>Test Driven Development (Instagram Clone) – An Instagram‑like app built using test‑driven development (TDD) methodologies, emphasising industry‑standard red/green/refactor cycles.</h4>
         <img src="assets/images/grammable.png" class="full-width" />
         </a>
-          <p>
-            An Instagram clone that was built using industry-standard, test-driven
-            development following numerous red/green/refactor cycles.
-          </p>
       </div>
 
       <br class="clear" />
 
       <div class="box">
-        <h4>Single Page Todo Application</h4>
-          <img src="assets/images/todoster.png" class="full-width" />
+        <h4>Single‑Page Todo Application – A JavaScript‑powered single‑page app that allows users to add tasks dynamically.</h4>
+        <img src="assets/images/todoster.png" class="full-width" />
         </a>
-          <p>
-            This single-page to-do application features a
-            fluid user interface that– by using JavaScript–
-            allows users to rapidly add dynamic content.
-          </p>
       </div>
-
+    </details>
      <br class="clear" />
 
-      <h3 id="skills-and-tools">Skills &amp; Tools</h3>
-        <hr class="blue"/>
+    <details class="section">
+      <h3 id="skills-and-tools">Skills & Tools Section – This section explains that Shannon is proficient in multiple languages and comfortable with a variety of development tools srachal.netlify.app . Based on the projects showcased, these likely include Ruby on Rails, HTML/CSS, JavaScript, Python, Git, GitHub, Heroku and Netlify, along with agile practices.</h3>
 
-        <p class="skills-and-tools">
-          Shannon has developed proficiency and expertise
-          in the following programming languages and
-          comfort with the following tools.
-        </p>
+      <hr class="blue"/>
 
-      <div class="icons">
-        <img src="assets/images/github.png" class="icon" />
-        <img src="assets/images/rubocop.png" class="icon" />
-        <img src="assets/images/trello.png" class="icon" />
-        <img src="assets/images/slack.png" class="icon" />
-        <img src="assets/images/codeship.png" class="icon" />
-        <br class="clear" />
-        <img src="assets/images/skills.png" class="icon"/>
+        <div class="icons">
+          <img src="assets/images/github.png" class="icon" />
+          <img src="assets/images/rubocop.png" class="icon" />
+          <img src="assets/images/trello.png" class="icon" />
+          <img src="assets/images/slack.png" class="icon" />
+          <img src="assets/images/codeship.png" class="icon" />
+          <br class="clear" />
+          <img src="assets/images/skills.png" class="icon"/>
+        </div>
       </div>
-    </div>
+    </details>
     
     <div class="contact-me" id="hire-me">
        <h3 class="contact-headline">Contact</h3>
