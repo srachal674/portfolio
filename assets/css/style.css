@@ -226,3 +226,14 @@ li {
     display: block;
     margin: 10px 0;
 }
+
+/*======= This controls layout ========*/
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-container .box {
+  width: calc(50% - 20px);
+}
