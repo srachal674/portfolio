@@ -1,188 +1,93 @@
-.about-container {
-    background: url("../../assets/images/bg.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 600px;
-  } 
-
-body{
+/* ===== BASE STYLES ===== */
+body {
   font-family: "Barlow", sans-serif;
   margin: 0;
   padding: 0;
- }
-
-h1{
-	color: #6092E5;
-	font-size: 50px;
-	font-weight: normal;
-	margin-bottom: 0;
-	text-shadow:
-		-2px -2px 0 #000,
-		2px -2px 0 #000,
-		-2px 2px 0 #000,
-		2px 2px 0 #000;
 }
 
-h2{
-	color: white;
-	font-size: 22px;
-	margin-top: 0;
-	text-shadow:
-		-2px -2px 0 #000,
-		2px -2px 0 #000,
-		-2px 2px 0 #000,
-		2px 2px 0 #000;
-}
-
-h3{
-	color: #00004d;
-	font-size: 22px;
-	margin-top: 0;
-	text-align: center;
-	font-size: 28px;
-	font-weight: normal;
-	margin-top: 100px;
-}
-
-h4{
-	text-align: center;
-	font-size: 24px;
-}
-
-h5{
-	color: #f2f2f2;
-	font-size: 22px;
-	margin-top: 0;
-	text-align: center;
-	font-size: 28px;
-	font-weight: normal;
-	margin-top: 100px;
-}
-
-p{
-	text-align: center;
-}
-
-li {
-  display: inline-block;
-  font-size: 18px;
-  width: 150px;
-  font-weight: bold;
-  margin-top: 30px;
-  margin-left: 100px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+h1, h2, h3, h4, h5, p {
+  margin: 0;
   text-align: center;
-  text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-  
-	}
-
-.bio {
-	color: white;
-	font-size: 24px;
-	text-shadow:
-		-3px -3px 0 #000,
-		3px -3px 0 #000,
-		-3px 3px 0 #000,
-		3px 3px 0 #000;
-
-	max-width: 1000px;        
-	margin-left: auto;       
-	margin-right: auto;      
-	text-align: justify;     
 }
 
-.me {
-	height: 150px;
-	border-radius: 100%;
-	border-style: solid;
-	border-color: white;
-	margin-top: 40px;
+h1 {
+  color: #6092e5;
+  font-size: 50px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000,
+               -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+h2 {
+  color: white;
+  font-size: 22px;
+  text-shadow: inherit;
+}
+
+h3 {
+  color: #00004d;
+  font-size: 28px;
+  font-weight: normal;
+  margin-top: 100px;
+}
+
+h4 {
+  font-size: 24px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* ===== HERO SECTION ===== */
+.about-container {
+  background: url("../../assets/images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 600px;
 }
 
 .about {
-	width: 400px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	text-shadow:
-		-2px -2px 0 #000,
-		2px -2px 0 #000,
-		-2px 2px 0 #000,
-		2px 2px 0 #000;
-}
-
-.grey {
-	height: 5px;
-	background-color: #b3b3b3;
-	border: 5px double #4d4d4d;
-	width: 50px;
-}
-
-.blue {
-	height: 5px;
-	background-color: #b3ccff;
-	border: 5px double #003399;;
-	width: 250px;
-}
-
-.box{
-	float: left;
-	
-	width: 42.5%;
-	margin-left: 5%;
-	margin-top: 8%;
-}
-
-.clear {
-	clear: both;
-}
-
-.full-width {
-	width: 100%;
-	max-width: none;
-}
-
-.skills-and-tools {
-  max-width: 800px;
-  margin: 40px auto;
-  text-align: justify;
-}
-
-.icons {
+  width: 400px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.icons {
-  margin: 30px 0;
+.me {
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-top: 40px;
 }
 
-.contact-me {
-  height: 350px;
-  background-color: #202020;
-  padding-top: 30px;
+.bio {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: justify;
 }
 
-.contact-headline {
-  color: white;
+/* ===== NAVIGATION ===== */
+.about-container ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
 }
 
-.contact-info {
-  color: white;
-  font-size: 13px;
-  margin-top: 30px;
-}
-
-.contact-link {
-  color: #ffffcc;
+li {
+  font-size: 18px;
   font-weight: bold;
-  font-size: 13px;
+  margin-top: 30px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+               -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .nav-link {
@@ -191,154 +96,122 @@ li {
 }
 
 .hire-me {
-  border-style: solid;
-  border-color: white;
+  border: 2px solid white;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
-/*Desktop layout*/
-.about-container ul {
-	display: flex;
-	justify-content: center;
-	gap: 20px;
-	list-style: none;
-	padding: 0;
+/* ===== DIVIDERS ===== */
+.grey,
+.blue {
+  height: 5px;
+  margin: 10px auto;
+  display: block;
 }
 
-/*Mobile layout*/
-@media screen and (max-width: 768px) {
-	.about-container ul {
-		flex-direction: column;
-		align-items: center;
-		background: transparent;
-	}
-
-	.about-container ul li {
-		margin-bottom: 10px;
-	}
-
-	.nav-link {
-		font-size: 18px;
-	}
+.grey {
+  background-color: #b3b3b3;
+  border: 5px double #4d4d4d;
+  width: 50px;
 }
 
-/* Overrides for full-width hero bio */
-.about.full-width {
-  max-width: 800px;    /* or 800px if you prefer */
-  margin-left: auto;
-  margin-right: auto;
+.blue {
+  background-color: #b3ccff;
+  border: 5px double #003399;
+  width: 250px;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+.box {
+  float: left;
+  width: 42.5%;
+  margin: 4% 5%;
+}
+
+.full-width {
   width: 100%;
-  padding: 0 2rem;
-  text-align: center;   /* restore centering */
 }
 
-.section {
-	font-size: x-large;
+.clear {
+  clear: both;
 }
 
-.barlow-thin {
-  font-family: "Barlow", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+/* ===== SKILLS ===== */
+.skills-and-tools {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: justify;
 }
 
-.barlow-extralight {
-  font-family: "Barlow", sans-serif;
-  font-weight: 200;
-  font-style: normal;
+.icons {
+  text-align: center;
+  margin: 30px 0;
 }
 
-.barlow-light {
-  font-family: "Barlow", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+.icon {
+  width: 80px;
+  margin: 10px;
 }
 
-.barlow-regular {
-  font-family: "Barlow", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+/* ===== CONTACT ===== */
+.contact-me {
+  background-color: #202020;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
 }
 
-.barlow-medium {
-  font-family: "Barlow", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+.contact-link {
+  color: #ffffcc;
+  font-weight: bold;
 }
 
-.barlow-semibold {
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+/* ===== MOBILE ===== */
+@media screen and (max-width: 768px) {
+  .about-container ul {
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+  }
+
+  .about-container ul li {
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+
+  /* ✅ Updated mobile .bio section */
+  .bio {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    text-align: left;
+    margin: 20px 15px;
+  }
 }
 
-.barlow-bold {
-  font-family: "Barlow", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+/* ===== BACK TO TOP BUTTON ===== */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #003399;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 12px 18px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  opacity: 0.7;
+  transition: all 0.3s;
+  z-index: 999; /* ensures it stays above other elements */
 }
 
-.barlow-extrabold {
-  font-family: "Barlow", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.barlow-black {
-  font-family: "Barlow", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.barlow-thin-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.barlow-extralight-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.barlow-light-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.barlow-regular-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.barlow-medium-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.barlow-semibold-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.barlow-bold-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.barlow-extrabold-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.barlow-black-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 900;
-  font-style: italic;
+.back-to-top:hover {
+  opacity: 1;
+  background-color: #6092e5;
 }
