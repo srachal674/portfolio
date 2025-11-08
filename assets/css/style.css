@@ -219,3 +219,10 @@ li {
   opacity: 1;
   background-color: #6092e5;
 }
+
+.project-image {
+    width: 60%;           /* or 70% if you want it larger */
+    max-width: 500px;
+    display: block;
+    margin: 10px 0;
+}
