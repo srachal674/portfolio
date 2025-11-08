@@ -154,6 +154,10 @@ li {
 }
 
 /* ===== CONTACT ===== */
+.contact-headline {
+  color: white;
+}
+
 .contact-me {
   background-color: #202020;
   color: white;
