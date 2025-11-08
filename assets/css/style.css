@@ -239,3 +239,11 @@ li {
   width: calc(50% - 20px);
   margin; 0;
 }
+
+#web-apps {
+  clear: both;
+  width: 100%
+  text-align: center;
+  margin-top: 100px;
+  display: block;
+}
