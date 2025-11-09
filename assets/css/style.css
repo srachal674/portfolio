@@ -78,13 +78,6 @@ p {
 }
 
 /* ===== NAVIGATION ===== */
-.about-container { 
-  position: relative;
-  height: 600px;
-  background: url(img src=".../.../assets/images/bg.jpeg");
-  background-color: #000;
-}
-/* put nav over the image */
 .about-container > ul {
   position: absolute;
   top: 0;
@@ -283,7 +276,7 @@ p {
 }
 
 .skills {
-  float; center;
+  float: center;
   width: 80;
 }
 
@@ -319,4 +312,8 @@ code[class*="language-"] {
   font-family: "Fira Code", monospace; /* clean developer font */
   font-size: 16px;
   line-height: 1.6;
+}
+
+section, .project-container, .skills-group {
+  margin-top: 60px;
 }
