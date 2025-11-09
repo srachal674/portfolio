@@ -80,7 +80,7 @@ p {
 .about-container { 
   position: relative;
   height: 600px;
-  background: url(".../.../assets/images/bg/jpeg");
+  background: url(".../.../assets/images/bg.jpeg");
   background-color: #000;
 }
 /* put nav over the image */
