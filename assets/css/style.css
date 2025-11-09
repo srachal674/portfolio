@@ -19,7 +19,7 @@ h1 {
      2px -2px 0 #142533,
     -2px  2px 0 #142533,
      2px  2px 0 #142533,
-     0 0 10px rgba(0, 0, 0, 0.8); /* subtle glow for legibility */
+     0 0 8px rgba(0, 0, 0, 0.6);/* subtle glow for legibility */
 }
 
 h2 {
