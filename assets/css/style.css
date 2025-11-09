@@ -12,16 +12,21 @@ h1, h2, h3, h4, h5, p {
 
 h1 {
   color: #6092e5;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 50px;
-  text-shadow: -2px -2px 0 #142533, 2px -2px 0 #142533,
-               -2px 2px 0 #142533, 2px 2px 0 #142533;
+  text-shadow:
+    -2px -2px 0 #142533,
+     2px -2px 0 #142533,
+    -2px  2px 0 #142533,
+     2px  2px 0 #142533,
+     0 0 10px rgba(0, 0, 0, 0.8); /* subtle glow for legibility */
 }
 
 h2 {
   color: navy;
   font-size: 22px;
   text-shadow: inherit;
+  margin-top: 5px;
 }
 
 h3 {
