@@ -48,170 +48,158 @@
       </div>
     </div>
 
-  <h3 id="code-samples">Code Snippets</h3>
-   <p>This part showcases small Ruby programs that demonstrate basic programming concepts:</p>
-   <br>
-    <hr class="blue"/>
-   <div class= "box">
-          <h4>Temperature Conversion</h4> <p>A script that takes a temperature in Celsius, converts it to Fahrenheit and prints the result, illustrating user input and arithmetic operations.</p>          
-      </div>
+    <div class="content">
+      <h3 id="code-samples">Code Snippets</h3>
+      <p>This part showcases small Ruby programs that demonstrate basic programming concepts:</p>
+      <hr class="blue"/>
+        <div class= "box">
+            <h4>Temperature Conversion</h4> <p>A script that takes a temperature in Celsius, converts it to Fahrenheit and prints the result, illustrating user input and arithmetic operations.</p>          
+        </div>
 
-      <div class="box">
-        <pre><code class="language-ruby">
-        def c_to_f 
-            puts &quot;Enter degrees Celsius&quot; 
-            degrees = gets 
-            fh = (degrees.to_i * 9/5) + 32 
-            puts &quot;#{degrees} Celsius is #{fh} Fahrenheit.&quot;
-        end
-
-        puts c_to_f 
-        </code></pre>
-
-      </div>
-
-      <div class="box">
-        <h4>Ordinal Challenge</h4> <p>Converts plain numbers into their ordinal form (1 → 1st, 2 → 2nd, etc.), demonstrating conditional logic.</p>
-      </div>
-      
-      <div class="box">
-        <pre><code class="language-ruby">
-        puts &quot;Enter a whole number&quot;
-          number = gets.chomp
-            answer = number.to_i
-            age = number % 10
-            
-        def answer (age)
-          if age == 1
-            return &quot;#{age} st&quot;
-          elsif age == 2
-            return &quot;#{age} nd&quot;
-          elsif age == 3
-            return &quot;#{age} rd&quot;
-          elsif age == 4 || 5 || 6 || 7 || 8 || 9 || 10
-            return &quot;#{age} th&quot;
+        <div class="box">
+          <pre><code class="language-ruby">
+          def c_to_f 
+              puts &quot;Enter degrees Celsius&quot; 
+              degrees = gets 
+              fh = (degrees.to_i * 9/5) + 32 
+              puts &quot;#{degrees} Celsius is #{fh} Fahrenheit.&quot;
           end
-        end
 
-        puts answer (age)
-        </code></pre>
+          puts c_to_f 
+          </code></pre>
 
-      </div>
+        </div>
 
-      <div class="box">
-        <h4>Foobar</h4> <p>An adaptation of the classic FizzBuzz problem: given a number of items, it prints “Foo,” “Bar” or “Foobar” depending on divisibility, highlighting looping and conditionals.</p>
-      </div>
-
-    <div class="box">
-      <pre><code class="language-ruby">
-        puts &quot;How many items do you want to see?&quot;
-        items = gets.chomp.to_i
-          
-        list = []
-        (1..items).each do |x|
-          if x % 3 == 0 &amp;&amp; x % 5 == 0
-            list &lt;&lt; &quot;Foobar&quot;
-          elsif x % 5 == 0 
-            list &lt;&lt; &quot;Bar&quot;
-          elsif x % 3 ==0
-            list &lt;&lt; &quot;Foo&quot;
-          else 
-            list &lt;&lt; x
+        <div class="box">
+          <h4>Ordinal Challenge</h4> <p>Converts plain numbers into their ordinal form (1 → 1st, 2 → 2nd, etc.), demonstrating conditional logic.</p>
+        </div>
+        
+        <div class="box">
+          <pre><code class="language-ruby">
+          puts &quot;Enter a whole number&quot;
+            number = gets.chomp
+              answer = number.to_i
+              age = number % 10
+              
+          def answer (age)
+            if age == 1
+              return &quot;#{age} st&quot;
+            elsif age == 2
+              return &quot;#{age} nd&quot;
+            elsif age == 3
+              return &quot;#{age} rd&quot;
+            elsif age == 4 || 5 || 6 || 7 || 8 || 9 || 10
+              return &quot;#{age} th&quot;
+            end
           end
-        end
-      puts list
-      </code></pre>
-    </div>
-  </details>
- 
-  <h3 id="web-apps">Web Apps Section</h3>
-      <p>This highlights several full‑stack or front‑end applications built during the bootcamp:</p>
-      <br>
-    <hr class="blue" />
 
-      <div class="project-container">
-        <div class="box">
-          <h4>Quote Generator</h4> 
-          <p> A Rails‑based, database‑powered quote generator with a mobile‑first design; version‑controlled with Git/GitHub and deployed on Heroku.</p>
-          <img src="assets/images/splurty.png" class="full-width" />
-        </div>
-      
-        <div class="box">
-          <h4>Yelp Clone</h4> 
-          <p>A Yelp‑style app integrating Google Maps and supporting user comments, star ratings, image uploads and authentication.</p>
-          <img src="assets/images/nomster.png" class="full-width" />
-        </div>
-     
-        <div class="box">
-          <h4>Two‑Sided Market Place</h4> 
-          <p>A video‑streaming marketplace that handles credit‑card payments, user roles, complex interfaces and advanced database relations.</p>
-          <img src="assets/images/flixter.png" class="full-width" />
-        </div>
-      
-        <div class="box">
-          <h4>Test Driven Development (Instagram Clone)</h4> 
-          <p>Developed with test‑driven development (TDD) cycles</p>
-          <img src="assets/images/grammable.png" class="full-width" />
-        </div>
-      
-        <div class="box">
-          <h4>Single‑Page Todo Application</h4> 
-          <p>A JavaScript‑powered single‑page app that allows users to add tasks dynamically.</p>
-          <img src="assets/images/todoster.png" class="project-image" />
+          puts answer (age)
+          </code></pre>
         </div>
 
+        <div class="box">
+          <h4>Foobar</h4> <p>An adaptation of the classic FizzBuzz problem: given a number of items, it prints “Foo,” “Bar” or “Foobar” depending on divisibility, highlighting looping and conditionals.</p>
+        </div>
+
+        <div class="box">
+          <pre><code class="language-ruby">
+            puts &quot;How many items do you want to see?&quot;
+            items = gets.chomp.to_i
+              
+            list = []
+            (1..items).each do |x|
+              if x % 3 == 0 &amp;&amp; x % 5 == 0
+                list &lt;&lt; &quot;Foobar&quot;
+              elsif x % 5 == 0 
+                list &lt;&lt; &quot;Bar&quot;
+              elsif x % 3 ==0
+                list &lt;&lt; &quot;Foo&quot;
+              else 
+                list &lt;&lt; x
+              end
+            end
+          puts list
+          </code></pre>
+        </div>
       </div>
-
     </details>
-     <br class="clear" />
+    
+    <div class="content">
+      <h3 id="web-apps">Web Apps Section</h3>
+          <p>This highlights several full‑stack or front‑end applications built during the bootcamp:</p>
+      <hr class="blue" />
+
+        <div class="project-container">
+          <div class="box">
+            <h4>Quote Generator</h4> 
+            <p> A Rails‑based, database‑powered quote generator with a mobile‑first design; version‑controlled with Git/GitHub and deployed on Heroku.</p>
+            <img src="assets/images/splurty.png" class="full-width" />
+          </div>
+        
+          <div class="box">
+            <h4>Yelp Clone</h4> 
+            <p>A Yelp‑style app integrating Google Maps and supporting user comments, star ratings, image uploads and authentication.</p>
+            <img src="assets/images/nomster.png" class="full-width" />
+          </div>
+      
+          <div class="box">
+            <h4>Two‑Sided Market Place</h4> 
+            <p>A video‑streaming marketplace that handles credit‑card payments, user roles, complex interfaces and advanced database relations.</p>
+            <img src="assets/images/flixter.png" class="full-width" />
+          </div>
+        
+          <div class="box">
+            <h4>Test Driven Development (Instagram Clone)</h4> 
+            <p>Developed with test‑driven development (TDD) cycles</p>
+            <img src="assets/images/grammable.png" class="full-width" />
+          </div>
+        
+          <div class="box">
+            <h4>Single‑Page Todo Application</h4> 
+            <p>A JavaScript‑powered single‑page app that allows users to add tasks dynamically.</p>
+            <img src="assets/images/todoster.png" class="project-image" />
+          </div>
+
+        </div>
+      </div>
+    
     <a href="#top" class="back-to-top">⬆</a> 
 
-    <h3 id="skills-and-tools">Skills &amp; Tools</h3>
-      <p class="skills-and-tools">Shannon is proficient in multiple languages and comfortable with a variety of development tools
-srachal.netlify.app. Based on the projects showcased, these likely include Ruby on Rails, HTML/CSS, JavaScript, Python, Git, GitHub, Heroku and Netlify, along with agile practices.</p>
-      <hr class="blue"/>
+      <div class="content"> 
+      <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+          <p class="skills-and-tools">Shannon is proficient in multiple languages and comfortable with a variety of development tools
+    srachal.netlify.app. Based on the projects showcased, these likely include Ruby on Rails, HTML/CSS, JavaScript, Python, Git, GitHub, Heroku and Netlify, along with agile practices.</p>
+          <hr class="blue"/>
+          <div class="skills-group">
+            <h4>Front-End Development</h4>
+            <img src="assets/images/html.png" class="icon">
+            <img src="assets/images/css.png" class="icon">
+            <img src="assets/images/javascript.png" class="icon">
+            <img src="assets/images/react.png" class="icon">
+          </div>
 
-
-    <!-- <div class="icons">
-        <img src="assets/images/github.png" class="icon" />
-        <img src="assets/images/rubocop.png" class="icon" />
-        <img src="assets/images/trello.png" class="icon" />
-        <img src="assets/images/slack.png" class="icon" />
-        <img src="assets/images/codeship.png" class="icon" />
-        <br class="clear" />
-        <img src="assets/images/skills.png" class="icons"/>
+          <div class="skills-group">
+            <h4>Programming & Scripting</h4>
+            <img src="assets/images/python.png" class="icon">
+            <img src="assets/images/ruby.png" class="icon">
+          </div>
       </div>
-    </div>-->
-<div class="skills-group">
-  <h4>Front-End Development</h4>
-  <img src="assets/images/html.png" class="icon">
-  <img src="assets/images/css.png" class="icon">
-  <img src="assets/images/javascript.png" class="icon">
-  <img src="assets/images/react.png" class="icon">
-</div>
 
-<div class="skills-group">
-  <h4>Programming & Scripting</h4>
-  <img src="assets/images/python.png" class="icon">
-  <img src="assets/images/ruby.png" class="icon">
-</div>
-
-
-<!-- and so on for Tools & Workflow, Design & Media -->  
-    
-    <div class="contact-me" id="hire-me">
-      
-      <h3 class="contact-headline">Contact</h3>
-      
-      <hr class="blue" />
-      <p class="contact-info">
-          Currently entertaining new opportunities.
-          Please get in touch via email: 
-        <a href="mailto:srachal674@gmail.com" class="contact-link">
-            srachal674@gmail.com
-        </a>
-      </p>
+  <!-- and so on for Tools & Workflow, Design & Media -->  
+    <div class="content">
+      <div class="contact-me" id="hire-me">
         
+        <h3 class="contact-headline">Contact</h3>
+       
+        <hr class="blue" />
+        <p class="contact-info">
+            Currently entertaining new opportunities.
+            Please get in touch via email: 
+          <a href="mailto:srachal674@gmail.com" class="contact-link">
+              srachal674@gmail.com
+          </a>
+        </p>
+      </div>
     </div>
     <a href="#top" class="back-to-top">⬆</a>
   </body>
