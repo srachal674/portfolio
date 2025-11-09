@@ -285,3 +285,13 @@ p {
   float; center;
   width: 80;
 }
+
+.skills-group {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.skills-group h4 {
+  color: #003399;
+  margin-bottom: 10px;
+}
