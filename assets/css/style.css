@@ -77,28 +77,34 @@ p {
 }
 
 /* ===== NAVIGATION ===== */
-.about-container {
-  position: relative; /* makes it a positioned container */
+.about-container { 
+  position: relative;
+  height: 600px;
+  background: url(".../.../assets/images/bg/jpeg");
+  background-color: #000;
 }
-
-.about-container ul {
+/* put nav over the image */
+.about-container > ul {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 20;
+
   display: flex;
   justify-content: center;
   gap: 30px;
   list-style: none;
-  padding: 20px 0;
   margin: 0;
-  background: rgba(0, 0, 0, 0.4); /* translucent overlay */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(4px);
-  z-index: 10; /* makes sure it stays above the image */
+  padding: 14px 0;
+
+  background: rgba(0,0,0,0.4);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(6px);
 }
 
-li {
+.about-container li {
+  margin: 0;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -120,6 +126,7 @@ li {
   color: #fff;
   transform: translateY(-2px); /* subtle lift effect */
 }
+
 /* ===== DIVIDERS ===== */
 .grey,
 .blue {
