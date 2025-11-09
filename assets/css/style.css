@@ -41,8 +41,11 @@ p {
 
 /* ===== HERO SECTION ===== */
 .about-container {
-  background: url("../../assets/images/bg.jpeg") no-repeat center center fixed;
+  background: url("../../assets/images/bg.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #000;
   height: 600px;
 }
 
@@ -96,7 +99,6 @@ li {
 }
 
 .hire-me {
-  padding: 4px 8px;
   border-radius: 4px;
 }
 
