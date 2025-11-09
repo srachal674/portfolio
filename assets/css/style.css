@@ -198,7 +198,7 @@ p {
 }
 
 .contact-link {
-  color: #ffffcc;
+  color: #FDD023;
   font-weight: bold;
 }
 
@@ -269,7 +269,8 @@ p {
 
 .project-container .box {
   float: none;
-  width: calc(50% - 20px);
+  width: 90%;
+  max-width: 450px;
   margin: 0;
 }
 
@@ -287,11 +288,19 @@ p {
 }
 
 .skills-group {
-  margin: 40px auto;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .skills-group h4 {
   color: #003399;
   margin-bottom: 10px;
+}
+
+pre {
+  max-width: 600px;
+  margin: 0 auto;
 }
