@@ -27,7 +27,8 @@ h3 {
   color: #00004d;
   font-size: 28px;
   font-weight: normal;
-  margin-top: 100px;
+  margin-top: 40px;
+  margin-bottom:10px;
 }
 
 h4 {
@@ -156,7 +157,7 @@ p {
 .box {
   float: left;
   width: 42.5%;
-  margin: 4% 5%;
+  margin: 4% 2.5%;
 }
 
 .full-width {
@@ -262,7 +263,8 @@ p {
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
+  justify-content: center;
 }
 
 .project-container .box {
