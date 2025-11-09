@@ -123,8 +123,9 @@ p {
 }
 
 .nav-link:hover {
-  background: #b3daff; /* lighter on hover */
-  color: #fff;
+  background-color: #b3daff;
+  -webkit-text-stroke-color: #090909; /* lighter on hover */
+  color: #ffffff;
   transform: translateY(-2px); /* subtle lift effect */
 }
 
