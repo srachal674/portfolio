@@ -77,35 +77,49 @@ p {
 }
 
 /* ===== NAVIGATION ===== */
+.about-container {
+  position: relative; /* makes it a positioned container */
+}
+
 .about-container ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   list-style: none;
-  padding: 0;
+  padding: 20px 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.4); /* translucent overlay */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  z-index: 10; /* makes sure it stays above the image */
 }
 
 li {
   font-size: 18px;
-  font-weight: bold;
-  margin-top: 30px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
-               -1px 1px 0 #000, 1px 1px 0 #000;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .nav-link {
-  opacity: 1;
-  color: #cce6ff;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #e0f0ff;
   text-decoration: none;
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent button */
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
 
 .nav-link:hover {
-  opacity: 1;
-  color: white;
-  text-decoration: none;
+  background: rgba(255, 255, 255, 0.25); /* lighter on hover */
+  color: #fff;
+  transform: translateY(-2px); /* subtle lift effect */
 }
-
-
 /* ===== DIVIDERS ===== */
 .grey,
 .blue {
