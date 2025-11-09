@@ -93,6 +93,12 @@ li {
                -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.nav-link {
+  opacity: 1;
+  color: white;
+  text-decoration: none;
+}
+
 .nav-link:hover {
   opacity: 1;
   color: white;
