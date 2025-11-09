@@ -41,7 +41,7 @@ p {
 
 /* ===== HERO SECTION ===== */
 .about-container {
-  background: url("../../assets/images/bg.jpg") no-repeat center center fixed;
+  background: url("../../assets/images/bg.jpeg") no-repeat center center fixed;
   background-size: cover;
   height: 600px;
 }
