@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html>
-
   <head>
+    <!-- #region META & TITLE -->
+    <meta name="description" content="Shannon Rachal — a dedicated educator turned web designer. With a background in teaching and a recent coding bootcamp at the University of Arizona under my belt, I specialise in creating clean, functional web projects using HTML5, CSS, JavaScript, and Python. Visit my portfolio to explore my code samples and web applications.">
+    <title>Shannon Rachal</title>
+    <!-- #endregion -->
+
+    <!-- #region FAVICONS -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png">
+    <!-- #endregion -->
+
+    <!-- #region STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- #endregion -->
+
+    <!-- #region GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    >
+    <!-- #endregion -->
+
+    <!-- #region CODE HIGHLIGHTING (PRISM) -->
     <link
       rel="stylesheet"
       href="assets/css/prism-atom-dark.css"
       type="text/css"
       media="screen"
-    />
-
+    >
     <script type="text/javascript" src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/prism.ruby.js"></script>
+    <!-- #endregion -->
+  </head>
 
-     <title>Shannon Rachal</title>
-    <meta name="description" content="Shannon Rachal — a dedicated educator turned web designer. With a background in teaching and a recent coding bootcamp at the University of Arizona under my belt, I specialise in creating clean, functional web projects using HTML5, CSS, JavaScript, and Python. Visit my portfolio to explore my code samples and web applications.">
-
-      </head>
   <body>
-    <a name="top" class="anchor"> </a>
+    <a name="top" class="anchor"></a>
 
+    <!-- #region HERO / ABOUT SECTION -->
     <div class="about-container">
       <ul>
         <li><a href="#" class="nav-link">ABOUT</a></li>
@@ -35,173 +50,183 @@
       </ul>
 
       <div class="about full-width">
-        <img src="assets/images/Portofolio_Cover.png" class="me" />
-
+        <img src="assets/images/Portofolio_Cover.png" class="me" alt="Shannon Rachal">
         <h1>Shannon Rachal</h1>
-      
         <h2>WEB DESIGNER</h2>
-      
-        <hr class="grey"/>
-        <p class="bio"> 
-        Shannon Rachal — a dedicated educator turned web designer. With a background in teaching and a recent coding bootcamp at the University of Arizona under my belt, I specialise in creating clean, functional web projects using HTML5, CSS, JavaScript, and Python.
+        <hr class="grey">
+        <p class="bio">
+          Shannon Rachal — a dedicated educator turned web designer. With a background in teaching and a recent coding bootcamp at the University of Arizona under my belt, I specialise in creating clean, functional web projects using HTML5, CSS, JavaScript, and Python.
         </p>
       </div>
     </div>
+    <!-- #endregion -->
 
+    <!-- #region CODE SNIPPETS SECTION -->
     <div class="content">
       <h3 id="code-samples">Code Snippets</h3>
       <p>This part showcases small Ruby programs that demonstrate basic programming concepts:</p>
-      <hr class="blue"/>
-        <div class= "box">
-            <h4>Temperature Conversion</h4> <p>A script that takes a temperature in Celsius, converts it to Fahrenheit and prints the result, illustrating user input and arithmetic operations.</p>          
-        </div>
+      <hr class="blue">
 
-        <div class="box">
-          <pre><code class="language-ruby">
-          def c_to_f 
-              puts &quot;Enter degrees Celsius&quot; 
-              degrees = gets 
-              fh = (degrees.to_i * 9/5) + 32 
-              puts &quot;#{degrees} Celsius is #{fh} Fahrenheit.&quot;
-          end
-
-          puts c_to_f 
-          </code></pre>
-
-        </div>
-
-        <div class="box">
-          <h4>Ordinal Challenge</h4> <p>Converts plain numbers into their ordinal form (1 → 1st, 2 → 2nd, etc.), demonstrating conditional logic.</p>
-        </div>
-        
-        <div class="box">
-          <pre><code class="language-ruby">
-          puts &quot;Enter a whole number&quot;
-            number = gets.chomp
-              answer = number.to_i
-              age = number % 10
-              
-          def answer (age)
-            if age == 1
-              return &quot;#{age} st&quot;
-            elsif age == 2
-              return &quot;#{age} nd&quot;
-            elsif age == 3
-              return &quot;#{age} rd&quot;
-            elsif age == 4 || 5 || 6 || 7 || 8 || 9 || 10
-              return &quot;#{age} th&quot;
-            end
-          end
-
-          puts answer (age)
-          </code></pre>
-        </div>
-
-        <div class="box">
-          <h4>Foobar</h4> <p>An adaptation of the classic FizzBuzz problem: given a number of items, it prints “Foo,” “Bar” or “Foobar” depending on divisibility, highlighting looping and conditionals.</p>
-        </div>
-
-        <div class="box">
-          <pre><code class="language-ruby">
-            puts &quot;How many items do you want to see?&quot;
-            items = gets.chomp.to_i
-              
-            list = []
-            (1..items).each do |x|
-              if x % 3 == 0 &amp;&amp; x % 5 == 0
-                list &lt;&lt; &quot;Foobar&quot;
-              elsif x % 5 == 0 
-                list &lt;&lt; &quot;Bar&quot;
-              elsif x % 3 ==0
-                list &lt;&lt; &quot;Foo&quot;
-              else 
-                list &lt;&lt; x
-              end
-            end
-          puts list
-          </code></pre>
-        </div>
+      <!-- #region Temperature Conversion -->
+      <div class="box">
+        <h4>Temperature Conversion</h4>
+        <p>A script that takes a temperature in Celsius, converts it to Fahrenheit and prints the result, illustrating user input and arithmetic operations.</p>
       </div>
-    </details>
-    
+
+      <div class="box">
+        <pre><code class="language-ruby">
+def c_to_f 
+  puts "Enter degrees Celsius" 
+  degrees = gets 
+  fh = (degrees.to_i * 9/5) + 32 
+  puts "#{degrees} Celsius is #{fh} Fahrenheit."
+end
+
+puts c_to_f 
+        </code></pre>
+      </div>
+      <!-- #endregion -->
+
+      <!-- #region Ordinal Challenge -->
+      <div class="box">
+        <h4>Ordinal Challenge</h4>
+        <p>Converts plain numbers into their ordinal form (1 → 1st, 2 → 2nd, etc.), demonstrating conditional logic.</p>
+      </div>
+
+      <div class="box">
+        <pre><code class="language-ruby">
+puts "Enter a whole number"
+number = gets.chomp
+answer = number.to_i
+age = number % 10
+              
+def answer(age)
+  if age == 1
+    return "#{age} st"
+  elsif age == 2
+    return "#{age} nd"
+  elsif age == 3
+    return "#{age} rd"
+  else
+    return "#{age} th"
+  end
+end
+
+puts answer(age)
+        </code></pre>
+      </div>
+      <!-- #endregion -->
+
+      <!-- #region Foobar -->
+      <div class="box">
+        <h4>Foobar</h4>
+        <p>An adaptation of the classic FizzBuzz problem: given a number of items, it prints “Foo,” “Bar” or “Foobar” depending on divisibility, highlighting looping and conditionals.</p>
+      </div>
+
+      <div class="box">
+        <pre><code class="language-ruby">
+puts "How many items do you want to see?"
+items = gets.chomp.to_i
+              
+list = []
+(1..items).each do |x|
+  if x % 3 == 0 && x % 5 == 0
+    list << "Foobar"
+  elsif x % 5 == 0 
+    list << "Bar"
+  elsif x % 3 == 0
+    list << "Foo"
+  else 
+    list << x
+  end
+end
+puts list
+        </code></pre>
+      </div>
+      <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region WEB APPS SECTION -->
     <div class="content">
       <h3 id="web-apps">Web Apps Section</h3>
-          <p>This highlights several full‑stack or front‑end applications built during the bootcamp:</p>
-      <hr class="blue" />
+      <p>This highlights several full-stack or front-end applications built during the bootcamp:</p>
+      <hr class="blue">
 
-        <div class="project-container">
-          <div class="box">
-            <h4>Quote Generator</h4> 
-            <p> A Rails‑based, database‑powered quote generator with a mobile‑first design; version‑controlled with Git/GitHub and deployed on Heroku.</p>
-            <img src="assets/images/splurty.png" class="full-width" />
-          </div>
-        
-          <div class="box">
-            <h4>Yelp Clone</h4> 
-            <p>A Yelp‑style app integrating Google Maps and supporting user comments, star ratings, image uploads and authentication.</p>
-            <img src="assets/images/nomster.png" class="full-width" />
-          </div>
-      
-          <div class="box">
-            <h4>Two‑Sided Market Place</h4> 
-            <p>A video‑streaming marketplace that handles credit‑card payments, user roles, complex interfaces and advanced database relations.</p>
-            <img src="assets/images/flixter.png" class="full-width" />
-          </div>
-        
-          <div class="box">
-            <h4>Test Driven Development (Instagram Clone)</h4> 
-            <p>Developed with test‑driven development (TDD) cycles</p>
-            <img src="assets/images/grammable.png" class="full-width" />
-          </div>
-        
-          <div class="box">
-            <h4>Single‑Page Todo Application</h4> 
-            <p>A JavaScript‑powered single‑page app that allows users to add tasks dynamically.</p>
-            <img src="assets/images/todoster.png" class="project-image" />
-          </div>
+      <div class="project-container">
+        <div class="box">
+          <h4>Quote Generator</h4>
+          <p>A Rails-based, database-powered quote generator with a mobile-first design; version-controlled with Git/GitHub and deployed on Heroku.</p>
+          <img src="assets/images/splurty.png" class="full-width" alt="Quote Generator App">
+        </div>
 
+        <div class="box">
+          <h4>Yelp Clone</h4>
+          <p>A Yelp-style app integrating Google Maps and supporting user comments, star ratings, image uploads and authentication.</p>
+          <img src="assets/images/nomster.png" class="full-width" alt="Yelp Clone App">
+        </div>
+
+        <div class="box">
+          <h4>Two-Sided Market Place</h4>
+          <p>A video-streaming marketplace that handles credit-card payments, user roles, complex interfaces and advanced database relations.</p>
+          <img src="assets/images/flixter.png" class="full-width" alt="Marketplace App">
+        </div>
+
+        <div class="box">
+          <h4>Test Driven Development (Instagram Clone)</h4>
+          <p>Developed with test-driven development (TDD) cycles.</p>
+          <img src="assets/images/grammable.png" class="full-width" alt="Instagram Clone">
+        </div>
+
+        <div class="box">
+          <h4>Single-Page Todo Application</h4>
+          <p>A JavaScript-powered single-page app that allows users to add tasks dynamically.</p>
+          <img src="assets/images/todoster.png" class="project-image" alt="Todo App">
         </div>
       </div>
-    
-    <a href="#top" class="back-to-top">⬆</a> 
+    </div>
+    <!-- #endregion -->
 
-      <div class="content"> 
+    <a href="#top" class="back-to-top">⬆</a>
+
+    <!-- #region SKILLS & TOOLS SECTION -->
+    <div class="content">
       <h3 id="skills-and-tools">Skills &amp; Tools</h3>
-          <p class="skills-and-tools">Shannon is proficient in multiple languages and comfortable with a variety of development tools
-    srachal.netlify.app. Based on the projects showcased, these likely include Ruby on Rails, HTML/CSS, JavaScript, Python, Git, GitHub, Heroku and Netlify, along with agile practices.</p>
-          <hr class="blue"/>
-          <div class="skills-group">
-            <h4>Front-End Development</h4>
-            <img src="assets/images/html.png" class="icon">
-            <img src="assets/images/css.png" class="icon">
-            <img src="assets/images/javascript.png" class="icon">
-            <img src="assets/images/react.png" class="icon">
-          </div>
+      <p class="skills-and-tools">
+        Shannon is proficient in multiple languages and comfortable with a variety of development tools (srachal.netlify.app). Based on the projects showcased, these likely include Ruby on Rails, HTML/CSS, JavaScript, Python, Git, GitHub, Heroku and Netlify, along with agile practices.
+      </p>
+      <hr class="blue">
 
-          <div class="skills-group">
-            <h4>Programming & Scripting</h4>
-            <img src="assets/images/python.png" class="icon">
-            <img src="assets/images/ruby.png" class="icon">
-          </div>
+      <div class="skills-group">
+        <h4>Front-End Development</h4>
+        <img src="assets/images/html.png" class="icon" alt="HTML">
+        <img src="assets/images/css.png" class="icon" alt="CSS">
+        <img src="assets/images/javascript.png" class="icon" alt="JavaScript">
+        <img src="assets/images/react.png" class="icon" alt="React">
       </div>
 
-  <!-- and so on for Tools & Workflow, Design & Media -->  
+      <div class="skills-group">
+        <h4>Programming & Scripting</h4>
+        <img src="assets/images/python.png" class="icon" alt="Python">
+        <img src="assets/images/ruby.png" class="icon" alt="Ruby">
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region CONTACT SECTION -->
     <div class="content">
       <div class="contact-me" id="hire-me">
-        
         <h3 class="contact-headline">Contact</h3>
-       
-        <hr class="blue" />
+        <hr class="blue">
         <p class="contact-info">
-            Currently entertaining new opportunities.
-            Please get in touch via email: 
-          <a href="mailto:srachal674@gmail.com" class="contact-link">
-              srachal674@gmail.com
-          </a>
+          Currently entertaining new opportunities.
+          Please get in touch via email:
+          <a href="mailto:srachal674@gmail.com" class="contact-link">srachal674@gmail.com</a>
         </p>
       </div>
     </div>
+    <!-- #endregion -->
+
     <a href="#top" class="back-to-top">⬆</a>
   </body>
-
 </html>
