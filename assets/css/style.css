@@ -19,7 +19,7 @@ h1 {
      2px -2px 0 #142533,
     -2px  2px 0 #142533,
      2px  2px 0 #142533,
-     0 0 8px rgba(0, 0, 0, 0.6);/* subtle glow for legibility */
+     0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 h2 {
@@ -34,7 +34,7 @@ h3 {
   font-size: 28px;
   font-weight: normal;
   margin-top: 40px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -91,15 +91,13 @@ p {
   left: 0;
   width: 100%;
   z-index: 20;
-
   display: flex;
   justify-content: center;
   gap: 30px;
   list-style: none;
   margin: 0;
   padding: 5px 0;
-
-  background-color: rgba(0, 0, 0, 0.25);   /* softer overlay */
+  background-color: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(2px) saturate(150%);
   -webkit-backdrop-filter: blur(2px) saturate(150%);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -121,15 +119,11 @@ p {
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
   text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-  /*-webkit-text-stroke-width: 0.4px;
-  -webkit-text-stroke-color: rgba(0,0,0,0.7);*/
 }
 
 .nav-link:hover {
   background-color: #b3daff;
   color: #ffffff;
-  /*-webkit-text-stroke-width: 0.6px;
-  -webkit-text-stroke-color: #0a0a0a;*/
   transform: translateY(-2px);
 }
 
@@ -199,7 +193,7 @@ p {
 }
 
 .contact-link {
-  color: #FDD023;
+  color: #fdd023;
   font-weight: bold;
 }
 
@@ -219,7 +213,6 @@ p {
     font-size: 18px;
   }
 
-  /* ✅ Updated mobile .bio section */
   .bio {
     font-size: 18px;
     line-height: 1.5;
@@ -245,7 +238,7 @@ p {
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
   opacity: 0.7;
   transition: all 0.3s;
-  z-index: 999; /* ensures it stays above other elements */
+  z-index: 999;
 }
 
 .back-to-top:hover {
@@ -253,14 +246,14 @@ p {
   background-color: #6092e5;
 }
 
+/* ===== PROJECTS ===== */
 .project-image {
-    width: 60%;           /* or 70% if you want it larger */
-    max-width: 500px;
-    display: block;
-    margin: 10px 0;
+  width: 60%;
+  max-width: 500px;
+  display: block;
+  margin: 10px 0;
 }
 
-/*======= This controls layout ========*/
 .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -283,6 +276,7 @@ p {
   display: block;
 }
 
+/* ===== SKILLS GROUP ===== */
 .skills {
   float: center;
   width: 80;
@@ -301,32 +295,35 @@ p {
   margin-bottom: 10px;
 }
 
+/* ===== CODE BLOCKS ===== */
 pre {
   max-width: 600px;
   margin: 0 auto;
 }
 
-/* Adjust Prism code blocks to better match your site's layout */
 pre[class*="language-"] {
-  background: #1b1b1b;              /* slightly lighter than pure black */
-  border-radius: 10px;              /* softer corners */
+  background: #1b1b1b;
+  border-radius: 10px;
   padding: 18px 24px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.25);
-  max-width: 700px;                 /* keeps them from stretching too wide */
-  margin: 20px auto;                /* centers and adds breathing room */
+  max-width: 700px;
+  margin: 20px auto;
 }
 
 code[class*="language-"] {
-  font-family: "Fira Code", monospace; /* clean developer font */
+  font-family: "Fira Code", monospace;
   font-size: 16px;
   line-height: 1.6;
 }
 
-section, .project-container, .skills-group {
+/* ===== GENERAL SPACING ===== */
+section,
+.project-container,
+.skills-group {
   margin-top: 60px;
 }
 
-/* Force custom Prism styling to override theme */
+/* ===== PRISM OVERRIDES ===== */
 body pre[class*="language-"] {
   background: #1b1b1b !important;
   border-radius: 10px !important;
@@ -342,6 +339,7 @@ body code[class*="language-"] {
   line-height: 1.6 !important;
 }
 
+/* ===== LAYOUT CONTAINER ===== */
 .content {
   max-width: 1200px;
   margin: 0 auto;
