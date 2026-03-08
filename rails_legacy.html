@@ -7,30 +7,32 @@
 
 <body>
     <!-- #region CODE SNIPPETS SECTION -->
-    <div class="content">
-        <h3 id="code-samples">Code Snippets</h3>
-        <p>This part showcases small Ruby programs that demonstrate basic programming concepts:</p>
-        <hr class="blue">
+    <div class="card">
+        <div class="content">
+            <h3 id="code-samples">Code Snippets</h3>
+            <p>This part showcases small Ruby programs that demonstrate basic programming concepts:</p>
+            <hr class="blue">
 
-        <!-- #region Temperature Conversion -->
-        <div class="box">
-            <h4>Temperature Conversion</h4>
-            <p>A script that takes a temperature in Celsius, converts it to Fahrenheit and prints the result,
-                illustrating
-                user input and arithmetic operations.</p>
+            <!-- #region Temperature Conversion -->
+            <div class="box">
+                <h4>Temperature Conversion</h4>
+                <p>A script that takes a temperature in Celsius, converts it to Fahrenheit and prints the result,
+                    illustrating
+                    user input and arithmetic operations.</p>
+            </div>
         </div>
 
         <div class="box">
             <pre><code class="language-ruby">
-    def c_to_f 
-      puts "Enter degrees Celsius" 
-      degrees = gets 
-      fh = (degrees.to_i * 9/5) + 32 
-      puts "#{degrees} Celsius is #{fh} Fahrenheit."
-    end
-    
-    puts c_to_f 
-            </code></pre>
+        def c_to_f 
+        puts "Enter degrees Celsius" 
+        degrees = gets 
+        fh = (degrees.to_i * 9/5) + 32 
+        puts "#{degrees} Celsius is #{fh} Fahrenheit."
+        end
+        
+        puts c_to_f 
+                </code></pre>
         </div>
         <!-- #endregion -->
 
@@ -43,25 +45,25 @@
 
         <div class="box">
             <pre><code class="language-ruby">
-    puts "Enter a whole number"
-    number = gets.chomp
-    answer = number.to_i
-    age = number % 10
-                  
-    def answer(age)
-      if age == 1
-        return "#{age} st"
-      elsif age == 2
-        return "#{age} nd"
-      elsif age == 3
-        return "#{age} rd"
-      else
-        return "#{age} th"
-      end
-    end
-    
-    puts answer(age)
-            </code></pre>
+        puts "Enter a whole number"
+        number = gets.chomp
+        answer = number.to_i
+        age = number % 10
+                    
+        def answer(age)
+        if age == 1
+            return "#{age} st"
+        elsif age == 2
+            return "#{age} nd"
+        elsif age == 3
+            return "#{age} rd"
+        else
+            return "#{age} th"
+        end
+        end
+        
+        puts answer(age)
+                </code></pre>
         </div>
         <!-- #endregion -->
 
@@ -75,23 +77,23 @@
 
         <div class="box">
             <pre><code class="language-ruby">
-    puts "How many items do you want to see?"
-    items = gets.chomp.to_i
-                  
-    list = []
-    (1..items).each do |x|
-      if x % 3 == 0 && x % 5 == 0
-        list << "Foobar"
-      elsif x % 5 == 0 
-        list << "Bar"
-      elsif x % 3 == 0
-        list << "Foo"
-      else 
-        list << x
-      end
-    end
-    puts list
-            </code></pre>
+        puts "How many items do you want to see?"
+        items = gets.chomp.to_i
+                    
+        list = []
+        (1..items).each do |x|
+        if x % 3 == 0 && x % 5 == 0
+            list << "Foobar"
+        elsif x % 5 == 0 
+            list << "Bar"
+        elsif x % 3 == 0
+            list << "Foo"
+        else 
+            list << x
+        end
+        end
+        puts list
+                </code></pre>
         </div>
         <!-- #endregion -->
     </div>
