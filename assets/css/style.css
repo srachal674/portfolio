@@ -320,8 +320,13 @@ hr {
   margin-bottom: 10px;
 }
 
-.card-style {
-  background-color: rgba(211, 211, 211, 0.566);
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 
