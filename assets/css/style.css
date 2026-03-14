@@ -135,12 +135,15 @@ p {
 /* ===== DIVIDERS ===== */
 hr {
   border: none;
-  height: 2px;
-  width: 60%;
-  margin: 50px auto;
+  height: 4px;
+  width: 80px;
+  margin: 60px auto;
   border-radius: 999px;
 
-
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0));
 }
 
 .gray {
