@@ -376,6 +376,10 @@ body code[class*="language-"] {
   background-color: black;
 }
 
+.nav {
+  background-color: black;
+}
+
 .navbar-brand {
   background-color: black;
   font-family: "Tangerine", cursive;
