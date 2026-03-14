@@ -298,7 +298,7 @@ p {
 .skills-group-2 {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
