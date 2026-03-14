@@ -374,4 +374,17 @@ body code[class*="language-"] {
 /* ====== Navbar ====== */
 .navbar-brand {
   background-color: black;
+  font-family: "Tangerine", cursive;
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
 }
