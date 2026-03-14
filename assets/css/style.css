@@ -177,6 +177,17 @@ hr {
   clear: both;
 }
 
+.section-panel {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+
+  backdrop-filter: blur(6px);
+}
+
 /* ===== SKILLS ===== */
 .skills-and-tools {
   max-width: 800px;
