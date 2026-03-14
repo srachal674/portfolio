@@ -372,6 +372,10 @@ body code[class*="language-"] {
 }
 
 /* ====== Navbar ====== */
+.navbar {
+  background-color: black;
+}
+
 .navbar-brand {
   background-color: black;
   font-family: "Tangerine", cursive;
