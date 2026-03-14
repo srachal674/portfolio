@@ -295,14 +295,6 @@ p {
   margin-bottom: 30px;
 }
 
-.skills-group-2 {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
 .skills-group h4 {
   color: #003399;
   margin-bottom: 10px;
