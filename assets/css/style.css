@@ -144,7 +144,7 @@ hr {
 }
 
 .gray {
-  ß background: linear-gradient(to right,
+  background: linear-gradient(to right,
       transparent,
       rgba(255, 255, 255, 0.4),
       transparent);
