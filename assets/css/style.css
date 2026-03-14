@@ -140,9 +140,21 @@ hr {
   margin: 50px auto;
   border-radius: 999px;
 
-  background: linear-gradient(to right,
+
+}
+
+.gray {
+  ß background: linear-gradient(to right,
       transparent,
       rgba(255, 255, 255, 0.4),
+      transparent);
+
+}
+
+.blue {
+  background: linear-gradient(to right,
+      transparent,
+      rgba(21, 2, 116, 0.752),
       transparent);
 }
 
