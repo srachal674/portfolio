@@ -320,6 +320,11 @@ hr {
   margin-bottom: 10px;
 }
 
+.container my-5 {
+  background-color: rgba(211, 211, 211, 0.935);
+}
+
+
 /* ===== CODE BLOCKS ===== */
 pre {
   max-width: 600px;
