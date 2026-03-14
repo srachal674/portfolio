@@ -5,7 +5,12 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0;
   text-align: center;
 }
@@ -16,10 +21,10 @@ h1 {
   font-size: 50px;
   text-shadow:
     -2px -2px 0 #142533,
-     2px -2px 0 #142533,
-    -2px  2px 0 #142533,
-     2px  2px 0 #142533,
-     0 0 8px rgba(0, 0, 0, 0.6);
+    2px -2px 0 #142533,
+    -2px 2px 0 #142533,
+    2px 2px 0 #142533,
+    0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 h2 {
@@ -75,7 +80,7 @@ p {
   font-size: 20px;
   line-height: 1.6;
   font-weight: 300;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
   background-color: rgba(0, 0, 0, 0.4);
   padding: 20px 30px;
   border-radius: 12px;
@@ -85,7 +90,7 @@ p {
 }
 
 /* ===== NAVIGATION ===== */
-.about-container > ul {
+.about-container>ul {
   position: absolute;
   top: 0;
   left: 0;
@@ -118,7 +123,7 @@ p {
   text-decoration: none;
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .nav-link:hover {
@@ -235,7 +240,7 @@ p {
   font-size: 20px;
   padding: 12px 18px;
   border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   opacity: 0.7;
   transition: all 0.3s;
   z-index: 999;
@@ -290,6 +295,14 @@ p {
   margin-bottom: 30px;
 }
 
+.skills-group-2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
 .skills-group h4 {
   color: #003399;
   margin-bottom: 10px;
@@ -305,7 +318,7 @@ pre[class*="language-"] {
   background: #1b1b1b;
   border-radius: 10px;
   padding: 18px 24px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   max-width: 700px;
   margin: 20px auto;
 }
@@ -328,7 +341,7 @@ body pre[class*="language-"] {
   background: #1b1b1b !important;
   border-radius: 10px !important;
   padding: 18px 24px !important;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.25) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) !important;
   max-width: 700px !important;
   margin: 20px auto !important;
 }
