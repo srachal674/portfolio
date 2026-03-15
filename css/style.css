@@ -84,7 +84,15 @@ a {
     color: aliceblue;
 }
 
-.navbar .nav-link:hover,
+.navbar,
 .navbar .nav-link:focus {
     color: aliceblue;
+}
+
+.nav-link:hover {
+    color: rgb(247, 247, 195);
+}
+
+.nav-link:visited {
+    color: rgba(244, 171, 103, 0.971);
 }
