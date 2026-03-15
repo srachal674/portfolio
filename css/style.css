@@ -77,9 +77,6 @@ a {
 
 .navbar-brand {
     color: aliceblue;
-    font-size: clamp(1.8rem, 2.5vw, 2.6rem);
-    font-weight: 700;
-    margin-bottom: 0;
 }
 
 .navbar .nav-link {
