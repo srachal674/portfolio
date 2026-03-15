@@ -102,6 +102,10 @@ a:active {
     color: aliceblue;
 }
 
+.navbar-brand:visited {
+    color: aliceblue;
+}
+
 .navbar .nav-link {
     color: aliceblue;
 }
