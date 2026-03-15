@@ -85,7 +85,7 @@ section h2 {
 }
 
 a {
-    color: Navy;
+    color: rgb(100, 249, 119);
 }
 
 a:hover {
@@ -93,7 +93,7 @@ a:hover {
 }
 
 a:visited {
-    color: #f64b1c;
+    color: #fc9e11;
 }
 
 a:active {
