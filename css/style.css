@@ -54,6 +54,10 @@ section h2 {
     color: white;
 }
 
+.btn {
+    color: rgb(100, 249, 119);
+}
+
 .btn-outline-dark {
     color: white;
     border-color: white;
@@ -89,7 +93,7 @@ a {
 }
 
 a:hover {
-    color: rgb(1, 88, 34);
+    color: rgb(7, 247, 207);
 }
 
 a:visited {
