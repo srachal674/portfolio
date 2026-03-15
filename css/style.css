@@ -87,6 +87,11 @@ a:visited {
     color: aliceblue;
 }
 
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: aliceblue;
+}
+
 .navbar .nav-link {
     color: aliceblue;
 }
