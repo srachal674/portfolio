@@ -88,40 +88,25 @@ a:active {
     color: rgb(94, 0, 0)
 }
 
-.nav,
-.navbar,
-.navbar-brand {
-    backdrop-filter: blur(8px);
-    background: rgba(20, 20, 30, 0.65);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+.navbar {
     position: sticky;
     top: 0;
-    color: aliceblue;
+    z-index: 1000;
+    background: rgba(20, 20, 30, 0.65);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.navbar-brand:hover,
-.navbar-brand:focus {
-    color: aliceblue;
-}
-
-.navbar-brand:visited {
-    color: aliceblue;
-}
-
+.navbar .navbar-brand,
 .navbar .nav-link {
     color: aliceblue;
 }
 
-.navbar,
-.navbar .nav-link:focus {
-    color: aliceblue;
-}
-
-.nav-link:hover {
+.navbar .nav-link:hover {
     color: rgb(247, 247, 195);
 }
 
-.nav-link:visited {
+.navbar .nav-link:visited {
     color: rgba(244, 171, 103, 0.971);
 }
 
