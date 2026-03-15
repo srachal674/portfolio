@@ -67,15 +67,15 @@ section h2 {
 }
 
 a {
-    color: rgb(216, 156, 2);
+    color: Navy;
 }
 
 a:hover {
-    color: #9850f6;
+    color: rgb(1, 88, 34);
 }
 
 a:visited {
-    color: #1c24f6;
+    color: #f64b1c;
 }
 
 .navbar {
