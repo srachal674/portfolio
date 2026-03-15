@@ -10,6 +10,7 @@ body {
     background-size: cover;
     background-image: url('../assets/images/bkg2.jpg');
     font-family: Arial, sans-serif;
+    font-size: 18px;
     line-height: 1.6;
 }
 
