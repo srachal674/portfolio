@@ -47,7 +47,10 @@ section h2 {
     line-height: 1.6;
 }
 
-.glass-card h1,
+.glass-card h1 {
+    color: rgb(31, 229, 247)
+}
+
 .glass-card h2,
 .glass-card h3,
 .glass-card p {
@@ -97,7 +100,7 @@ a:hover {
 }
 
 a:visited {
-    color: #fc9e11;
+    color: rgba(246, 127, 16, 0.971);
 }
 
 a:active {
@@ -115,13 +118,13 @@ a:active {
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-    color: aliceblue;
+    color: rgb(100, 249, 119);
 }
 
 .navbar .nav-link:hover {
-    color: rgb(247, 247, 195);
+    color: rgb(7, 247, 207);
 }
 
 .navbar .nav-link:visited {
-    color: rgba(244, 171, 103, 0.971);
+    color: rgba(246, 127, 16, 0.971);
 }
