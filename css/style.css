@@ -66,6 +66,10 @@ section h2 {
     color: aliceblue;
 }
 
+.contact a {
+    font-weight: 600;
+}
+
 a {
     color: Navy;
 }
@@ -76,6 +80,10 @@ a:hover {
 
 a:visited {
     color: #f64b1c;
+}
+
+a:active {
+    color: rgb(94, 0, 0)
 }
 
 .navbar {
