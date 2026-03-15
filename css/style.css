@@ -78,3 +78,7 @@ a {
 .navbar-brand {
     color: aliceblue;
 }
+
+.navbar .nav-link {
+    color: #7dd3fc;
+}
