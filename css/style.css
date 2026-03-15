@@ -53,7 +53,8 @@ section h2 {
 
 .glass-card h2,
 .glass-card h3,
-.glass-card p {
+.glass-card p,
+.glass-card li {
     color: white;
 }
 
