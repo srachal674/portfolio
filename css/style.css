@@ -70,6 +70,14 @@ a {
     color: #faca0c;
 }
 
+a:hover {
+    color: #9850f6;
+}
+
+a:visited {
+    color: #1c24f6;
+}
+
 .navbar {
     background-color: rgb(45, 45, 45);
     color: aliceblue;
