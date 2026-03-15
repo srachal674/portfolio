@@ -5,10 +5,13 @@
 }
 
 body {
-    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
-    background-attachment: fixed;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("..assets/images.bkg.jpg");
+
     background-size: cover;
-    background-image: url('../assets/images/bkg2.png');
+    background-position: center;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 1.6;
