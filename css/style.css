@@ -35,7 +35,9 @@ section h2 {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 12px;
 
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -115,4 +117,9 @@ a:active {
 
 .nav-link:visited {
     color: rgba(244, 171, 103, 0.971);
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.3);
 }
