@@ -92,16 +92,24 @@ section h2 {
     font-weight: bold;
 }
 
-a {
+a,
+.navbar,
+.navbar-brand,
+.navbar,
+.nav-link {
     color: rgb(100, 249, 119);
 }
 
-a:hover {
+a:hover,
+.navbar,
+.nav-link:hover {
     color: rgb(7, 247, 207);
 }
 
-a:visited {
-    color: rgba(246, 127, 16, 0.971);
+a:visited,
+.navbar,
+.nav-link:visited {
+    color: rgba(246, 169, 16, 0.971);
 }
 
 a:active {
@@ -115,17 +123,4 @@ a:active {
     background: rgba(20, 20, 30, 0.65);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.navbar .navbar-brand,
-.navbar .nav-link {
-    color: rgb(100, 249, 119);
-}
-
-.navbar .nav-link:hover {
-    color: rgb(7, 247, 207);
-}
-
-.navbar .nav-link:visited {
-    color: rgba(246, 127, 16, 0.971);
 }
