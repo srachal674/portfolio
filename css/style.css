@@ -47,6 +47,23 @@ section h2 {
     line-height: 1.6;
 }
 
+.glass-card h1,
+.glass-card h2,
+.glass-card h3,
+.glass-card p {
+    color: white;
+}
+
+.btn-outline-dark {
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-dark:hover {
+    background: white;
+    color: black;
+}
+
 .hero-button {
     display: block;
     width: fit-content;
