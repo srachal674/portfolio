@@ -18,6 +18,11 @@ section {
     padding: 80px 20px;
 }
 
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
 .glass-card {
     margin: 60px auto;
     padding: 40px;
@@ -40,10 +45,19 @@ section {
     box-shadow: 0 28px 60px rgba(0, 0, 0, 0.45);
 }
 
+.glass-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
 .hero-button {
     display: block;
     width: fit-content;
     margin: 20px auto;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
 }
 
 .footer {
