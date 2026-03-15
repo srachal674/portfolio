@@ -72,10 +72,12 @@ a {
 
 .navbar {
     background-color: rgb(45, 45, 45);
+    color: aliceblue;
 }
 
 .navbar-brand {
     color: aliceblue;
+    font-size: larger;
 }
 
 .navbar .nav-link {
