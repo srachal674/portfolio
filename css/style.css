@@ -5,6 +5,7 @@
 }
 
 body {
+    background-image: url('assets/image/bkg.jpg');
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
