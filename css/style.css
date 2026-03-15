@@ -69,3 +69,11 @@ section h2 {
 a {
     color: #7dd3fc;
 }
+
+.navbar {
+    background-color: rgb(45, 45, 45);
+}
+
+.navbar-brand {
+    color: aliceblue;
+}
