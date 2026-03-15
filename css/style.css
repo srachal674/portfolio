@@ -109,8 +109,3 @@ a:active {
 .navbar .nav-link:visited {
     color: rgba(244, 171, 103, 0.971);
 }
-
-section:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.3);
-}
