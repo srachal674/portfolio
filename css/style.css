@@ -15,6 +15,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 1.6;
+    padding-top: 70px;
 }
 
 section {
@@ -119,6 +120,8 @@ a:active,
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
     background: rgba(20, 20, 30, 0.65);
     backdrop-filter: blur(8px);
