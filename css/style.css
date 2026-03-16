@@ -101,18 +101,23 @@ a,
 }
 
 a:hover,
-.navbar,
+.navbar-brand:hover,
+.navbar:hover,
 .nav-link:hover {
     color: rgb(7, 247, 207);
 }
 
 a:visited,
-.navbar,
+.navbar-brand:visited,
+.navbar:visited,
 .nav-link:visited {
     color: rgba(246, 169, 16, 0.971);
 }
 
-a:active {
+a:active,
+.navbar-brand:active,
+.navbar:active,
+.nav-link:active {
     color: rgb(94, 0, 0)
 }
 
