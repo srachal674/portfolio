@@ -66,6 +66,12 @@ section h2 {
     border-radius: 8px;
 }
 
+.project-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .btn {
     color: rgb(100, 249, 119);
 }
