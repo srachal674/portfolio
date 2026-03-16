@@ -59,6 +59,13 @@ section h2 {
     color: white;
 }
 
+.project-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 16px;
+}
+
 .btn {
     color: rgb(100, 249, 119);
 }
