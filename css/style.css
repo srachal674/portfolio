@@ -72,10 +72,6 @@ section h2 {
     justify-content: space-between;
 }
 
-.btn {
-    color: rgb(100, 249, 119);
-}
-
 .btn-outline-dark {
     color: white;
     border-color: white;
