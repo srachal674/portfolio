@@ -35,31 +35,42 @@ a {
     color: inherit;
 }
 
-.navbar {
+/* Simple brand bar: initials on the left, tagline on the right */
+.brand-bar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
     min-height: 64px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
     background: rgba(7, 17, 31, 0.92);
     border-bottom: 1px solid var(--border);
     backdrop-filter: blur(10px);
 }
 
 .navbar-brand {
+    margin: 0;
+    color: var(--text);
     font-weight: 700;
     letter-spacing: 0.08em;
+    text-decoration: none;
 }
 
 .brand-dot,
-.nav-link:hover,
 .navbar-brand:hover {
     color: var(--accent);
 }
 
-.nav-link {
-    color: var(--muted);
+.brand-tagline {
+    margin: 0;
+    color: var(--accent-light);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
 }
 
 .portfolio-dashboard {
@@ -342,6 +353,15 @@ a {
 @media (max-width: 620px) {
     body {
         padding-top: 58px;
+    }
+
+    .brand-bar {
+        min-height: 58px;
+        padding: 0 1rem;
+    }
+
+    .brand-tagline {
+        font-size: 0.78rem;
     }
 
     .portfolio-dashboard {
