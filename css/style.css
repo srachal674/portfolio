@@ -136,3 +136,10 @@ a:active,
     backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
+
+.portfolio-dashboard {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.8fr);
+    gap: 1rem;
+    padding: 1rem;
+}
