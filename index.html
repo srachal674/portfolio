@@ -1,172 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shannon Rachal | Portfolio</title>
+    <meta name="description" content="Portfolio of Shannon Rachal, computer science educator and software developer building practical automation tools, Python utilities, and web projects.">
+    <title>Shannon Rachal | Developer & Computer Science Educator</title>
 
-    <!-- Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- CSS file -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <!-- NAVBAR -->
     <header>
-        <nav class="navbar navbar-expand-sm">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#hero">Shannon Rachal</a>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#hero">SR<span class="brand-dot">.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav" aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="portfolioNav">
+                    <ul class="navbar-nav ms-auto align-items-md-center">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
-    <section id="hero">
-        <div class="glass-card">
-            <h2>Computer Science Teacher & Software Developer</h2>
-            <p>
-                I build automation tools with Python and develop modern web applications while teaching computer
-                science.
-            </p>
-
-            <div class="text-center">
-                <a href="#projects" class="btn btn-outline-dark">View Projects</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <div class="glass-card">
-            <h2>About Me</h2>
-            <p>
-                I’m a Python developer and computer science educator who enjoys building practical software that solves
-                real-world
-                problems. My work focuses on automation, scripting, and web development, creating tools that simplify
-                workflows and make
-                complex tasks easier to manage.
-            </p>
-            <p>
-                I have experience designing Python utilities, developing web projects, and experimenting
-                with algorithmic graphics. I’m especially interested in building reliable tools, improving processes
-                through code, and
-                continuing to grow as a developer.
-            </p>
-        </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="container-fluid my-5">
-        <div class="glass-card">
-            <h2 class="mb-4">Projects</h2>
-
-            <div class="row g-4 mt-1">
-
-                <!-- Project 1 -->
-                <div class="col-12 col-md-4">
-                    <div class="card glass-card shadow-sm h-100">
-                        <div class="card-body">
-                            <h4 class="card-title">Python Excel File Renamer</h4>
-                            <img src="assets/images/excel_file_renamer.png" class="project-image"
-                                alt="Python Excel File Renamer Script">
-                            <p class="card-text">
-                                Python automation script that scans Excel log files,
-                                extracts key data using regex patterns, and renames files
-                                into a standardized format.
-                            </p>
-                            <div class="text-center">
-                                <a href="https://github.com/srachal674/portfolio/blob/main/assets/excel_file_renamer.py"
-                                    target="_blank" class="btn btn-outline-dark">View Code</a>
-                            </div>
-                        </div>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="eyebrow">COMPUTER SCIENCE EDUCATOR • SOFTWARE DEVELOPER</p>
+                    <h1>Shannon Rachal</h1>
+                    <p class="hero-lead">
+                        I build practical software that turns repetitive work into streamlined workflows —
+                        especially with Python, APIs, automation, and web technologies.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary-custom">Explore My Work</a>
+                        <a href="https://github.com/srachal674" target="_blank" rel="noopener" class="btn btn-secondary-custom">GitHub Profile</a>
                     </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="col-12 col-md-4">
-                    <div class="card glass-card shadow-sm h-100">
-                        <div class="card-body">
-                            <h4 class="card-title">Generative Spiral System</h4>
-                            <img src="https://raw.githubusercontent.com/srachal674/generative_spiral_system/refs/heads/main/images/spiral_example.png"
-                                class="project-image"
-                                alt="Colorful spiral patterns generated by algorithmic code, featuring concentric circles and curves in vibrant colors including blues, purples, and greens stacked in a mesmerizing radial design">
-                            <p class="card-text">Algorithmic graphics created using Python Turtle.
-                            </p>
-                            <div class="text-center">
-                                <a href="https://github.com/srachal674/generative_spiral_system.git"
-                                    class="btn btn-outline-dark">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="col-12 col-md-4">
-                    <div class="card glass-card shadow-sm h-100">
-                        <div class="card-body">
-                            <h4 class="card-title">JavaScript Project</h4>
-                            <p class="card-text">
-                                A small front-end project built with HTML, CSS, and JavaScript.
-                            </p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-outline-dark">View Project</a>
-                            </div>
-                        </div>
+                    <div class="hero-tags" aria-label="Primary specialties">
+                        <span>Python Automation</span>
+                        <span>Canvas API</span>
+                        <span>Web Development</span>
+                        <span>EdTech</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills">
-        <div class="glass-card">
-            <h2>Skills</h2>
+        <section id="about" class="content-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">ABOUT</p>
+                    <h2>Code built around real problems.</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="panel">
+                        <p>
+                            I’m a computer science educator and developer with a background in instructional technology and full-stack development. I enjoy building tools that solve problems I encounter in real workflows — not just projects created for a tutorial.
+                        </p>
+                        <p class="mb-0">
+                            My recent work focuses on Python desktop utilities and Canvas LMS automation: reducing repetitive course maintenance, improving pacing workflows, and making complex administrative tasks faster and more reliable.
+                        </p>
+                    </div>
+                    <div class="about-callout">
+                        <span class="callout-number">01</span>
+                        <h3>Build for usefulness</h3>
+                        <p>Identify the repetitive task, understand the workflow, automate carefully, and keep the user in control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </div>
-        </div>
-    </section>
+        <section id="projects" class="content-section projects-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">SELECTED WORK</p>
+                    <h2>Projects</h2>
+                    <p>Automation, APIs, Python utilities, and creative coding.</p>
+                </div>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <div class="glass-card">
-            <h2>Contact</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-6">
+                        <article class="project-card featured-project h-100">
+                            <div class="project-topline">
+                                <span class="project-type">PYTHON • CANVAS REST API • DESKTOP APP</span>
+                                <span class="project-status">Featured</span>
+                            </div>
+                            <div class="project-icon" aria-hidden="true">📅</div>
+                            <h3>Canvas Calendar Pacing Automation</h3>
+                            <p>
+                                A desktop automation tool created to turn course pacing calendars into actionable Canvas updates. It reduces the repetitive work involved in scheduling lessons, assignments, quizzes, tests, and course deadlines across multiple classes.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Automates Canvas due-date and pacing workflows</li>
+                                <li>Handles different course-item types and scheduling rules</li>
+                                <li>Built around real school-calendar constraints and course deadlines</li>
+                                <li>Designed for repeatable use across multiple courses</li>
+                            </ul>
+                            <div class="tech-list">
+                                <span>Python</span><span>Canvas API</span><span>Automation</span><span>GUI</span>
+                            </div>
+                            <p class="project-note mb-0">Source package will be added to GitHub after the current production version is prepared for public sharing.</p>
+                        </article>
+                    </div>
 
-            <p>
-                Feel free to reach out if you'd like to connect or collaborate.
-            </p>
+                    <div class="col-12 col-lg-6">
+                        <article class="project-card featured-project h-100">
+                            <div class="project-topline">
+                                <span class="project-type">PYTHON • CANVAS REST API • TKINTER</span>
+                                <span class="project-status">Featured</span>
+                            </div>
+                            <div class="project-icon" aria-hidden="true">🧹</div>
+                            <h3>Canvas Course Cleanup</h3>
+                            <p>
+                                A local desktop utility for safely cleaning and reorganizing Canvas course content. The tool converts external-tool video assignments into regular Canvas pages while preserving important module details, then archives unused or unpublished content.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Preserves module position, indentation, links, and publication state</li>
+                                <li>Moves unpublished items into a selected archive/unused module</li>
+                                <li>Uses verification steps before changing original course content</li>
+                                <li>Keeps the Canvas access token in memory rather than writing it to disk</li>
+                            </ul>
+                            <div class="tech-list">
+                                <span>Python</span><span>Canvas API</span><span>Tkinter</span><span>REST</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="Canvas_Course_Cleanup.zip" class="project-link">Download Project ZIP →</a>
+                            </div>
+                        </article>
+                    </div>
 
-            <p>
-                <a href="mailto:srachal674@gmail.com">Email: srachal674@gmail.com</a>
-            </p>
-        </div>
-    </section>
+                    <div class="col-12 col-md-6">
+                        <article class="project-card h-100">
+                            <div class="project-topline">
+                                <span class="project-type">PYTHON • FILE AUTOMATION</span>
+                            </div>
+                            <img src="assets/images/excel_file_renamer.png" class="project-image" alt="Python Excel File Renamer script screenshot">
+                            <h3>Python Excel File Renamer</h3>
+                            <p>
+                                An automation script that scans Excel log files, extracts key data with regular expressions, and renames files into a standardized format.
+                            </p>
+                            <div class="tech-list"><span>Python</span><span>Regex</span><span>File Processing</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/srachal674/portfolio/blob/main/assets/excel_file_renamer.py" target="_blank" rel="noopener" class="project-link">View Code →</a>
+                            </div>
+                        </article>
+                    </div>
 
-    <!-- FOOTER -->
+                    <div class="col-12 col-md-6">
+                        <article class="project-card h-100">
+                            <div class="project-topline">
+                                <span class="project-type">PYTHON • CREATIVE CODING</span>
+                            </div>
+                            <img src="https://raw.githubusercontent.com/srachal674/generative_spiral_system/refs/heads/main/images/spiral_example.png" class="project-image" alt="Colorful algorithmically generated spiral pattern">
+                            <h3>Generative Spiral System</h3>
+                            <p>
+                                A creative coding project that uses Python Turtle and algorithmic repetition to generate layered geometric spiral designs.
+                            </p>
+                            <div class="tech-list"><span>Python</span><span>Turtle</span><span>Algorithms</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/srachal674/generative_spiral_system" target="_blank" rel="noopener" class="project-link">View Repository →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">TOOLKIT</p>
+                    <h2>Skills & Technologies</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-group panel">
+                        <h3>Development</h3>
+                        <div class="skill-chips">
+                            <span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skill-group panel">
+                        <h3>Automation & Data</h3>
+                        <div class="skill-chips">
+                            <span>REST APIs</span><span>Canvas LMS API</span><span>Regex</span><span>File Automation</span><span>Tkinter</span>
+                        </div>
+                    </div>
+                    <div class="skill-group panel">
+                        <h3>Workflow</h3>
+                        <div class="skill-chips">
+                            <span>Git</span><span>GitHub</span><span>VS Code</span><span>Debugging</span><span>UI/UX Thinking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section contact-section">
+            <div class="container">
+                <div class="contact-card">
+                    <div>
+                        <p class="eyebrow">LET'S CONNECT</p>
+                        <h2>Interested in practical automation or educational technology?</h2>
+                        <p>I’m always interested in thoughtful software projects that solve real workflow problems.</p>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="mailto:srachal674@gmail.com" class="btn btn-primary-custom">Email Me</a>
+                        <a href="https://github.com/srachal674" target="_blank" rel="noopener" class="btn btn-secondary-custom">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <div class="footer">
+        <div class="container footer-inner">
             <p>© 2026 Shannon Rachal</p>
+            <p>Built with HTML, CSS, Bootstrap & JavaScript.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-
 </body>
-
 </html>
